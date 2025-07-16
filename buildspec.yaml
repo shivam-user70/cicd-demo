@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - echo "Deploying to S3"
-      - aws s3 cp . s3://your-bucket-name/ --recursive --exclude "buildspec.yaml"
+      - aws s3 cp . s3://bucket-demo-cicd/ --recursive --exclude "buildspec.yaml"
 
 artifacts:
   files:
